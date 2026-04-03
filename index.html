@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="img/png" href="./img.png">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+ <header class="header">
+  <h1>💰 SpendWise</h1>
+
+  <div class="header-controls">
+    <div class="user-box">
+      <div class="avatar">V</div>
+
+      <select id="roleSelect">
+        <option value="viewer">Viewer</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+  </div>
+</header>
+  <!-- SUMMARY -->
+
+  <section class="summary">
+    <div class="card">
+      <h3>Total Balance</h3>
+      <p id="balance">₹0</p>
+    </div>
+
+
+<div class="card">
+  <h3>Income</h3>
+  <p id="income">₹0</p>
+</div>
+
+<div class="card">
+  <h3>Expenses</h3>
+  <p id="expenses">₹0</p>
+</div>
+
+
+  </section>
+
+  <!-- CHART -->
+
+  <section class="charts">
+
+  <!-- LEFT SIDE -->
+  <div class="card trend-card">
+    <h3>Balance Trend</h3>
+    <div id="trendChart"></div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="card chart-card">
+    <h3>Category Breakdown</h3>
+    <div id="categoryChartBars"></div>
+  </div>
+
+</section>
+
+  <!-- FILTERS -->
+
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Search category...">
+
+
+<select id="typeFilter">
+  <option value="">All Types</option>
+  <option value="income">Income</option>
+  <option value="expense">Expense</option>
+</select>
+
+<button id="resetBtn">Reset</button>
+
+
+  </section>
+
+  <!-- MAIN -->
+
+  <main class="main">
+
+<!-- TRANSACTIONS -->
+<section class="transactions">
+  <div class="transactions-header">
+    <h2>Transactions</h2>
+    <button id="addBtn">+ Add</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Type</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="transactionsTable"></tbody>
+  </table>
+</section>
+
+<!-- INSIGHTS -->
+<section class="insights">
+  <h2>Insights</h2>
+  <div id="insightsContent">
+    <p>No data yet</p>
+  </div>
+</section>
+
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
