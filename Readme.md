@@ -1,4 +1,4 @@
-# 💸 Personal Finance Dashboard
+# 💸 SpendWise
 
 A modern and interactive **Personal Finance Dashboard** built using **HTML, CSS, and JavaScript**.
 This project helps users track transactions, visualize spending, and gain financial insights.
