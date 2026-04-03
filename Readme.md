@@ -130,6 +130,6 @@ No installation required 🚀
 
 ## 🙌 Author
 
-Built with focus on learning, improving, and creating a real-world dashboard experience.
+Vanya
 
 ---
