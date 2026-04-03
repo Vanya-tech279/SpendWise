@@ -331,10 +331,79 @@ border: 1px solid rgba(255,255,255,0.05);
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-.summary,
-.charts,
-.main {
-flex-direction: column;
+@media (max-width: 1024px) {
+  .charts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .transactions,
+  .insights {
+    width: 100%;
+  }
+
+  .summary {
+    flex-direction: column;
+  }
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button {
+    width: 100%;
+  }
+
+  #categoryChartBars,
+  #trendChart {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .card p {
+    font-size: 18px;
+  }
+
+  .card h3 {
+    font-size: 12px;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .transactions-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #addBtn {
+    width: 100%;
+  }
 }
